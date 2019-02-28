@@ -1,33 +1,36 @@
+const fs = require('fs')
 const Vue = require('vue')
 const server = require('express')()
 const VueServerRenderer = require('vue-server-renderer')
-const renderer = VueServerRenderer.createRenderer()
+const renderer = VueServerRenderer.createRenderer({
+  template: fs.readFileSync('./index.template.html', 'utf-8')
+})
+
+const context = {
+  title: 'vue ssr lesson3',
+  meta: `
+    <meta name="theme-color" content="#4285f4">
+  `,
+  content: '这是服务端插入的内容，由 renderToString 第二个参数 context 提供',
+  footer: 'final content'
+}
 
 server.get('*', (req, res) => {
   const app = new Vue({
     data: {
       url: req.url,
-      text: `vue ssr lessons from <a href="">NeverYu</a>`,
-      repository: `项目仓库地址： <a href="">vue-ssr-lessons</a>`
+      text: `项目仓库地址： <a href="">vue-ssr-lessons</a>`
     },
     template: `
       <div>
-        <div>当前访问的 URL 是： {{ url }}</div>
+        <div>访问的 URL 是： {{ url }}</div>
         <div v-html="text"></div>
-        <div v-html="repository"></div>
       </div>
     `
   })
 
-  renderer.renderToString(app).then(html => {
-    res.end(`
-      <!DOCTYPE html>
-      <html lang="en">
-        <meta charset="utf-8">
-        <head><titleVue SSR 课程</title></head>
-        <body>${html}</body>
-      </html>
-    `)
+  renderer.renderToString(app, context).then(html => {
+    res.end(`${html}`)
   }).catch(err => {
     res.status(500).end('Internal Server Error')
     return
