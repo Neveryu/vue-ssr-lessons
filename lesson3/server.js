@@ -12,14 +12,14 @@ const context = {
     <meta name="theme-color" content="#4285f4">
   `,
   content: '这是服务端插入的内容，由 renderToString 第二个参数 context 提供',
-  footer: 'final content'
+  footer: 'Final Content'
 }
 
 server.get('*', (req, res) => {
   const app = new Vue({
     data: {
       url: req.url,
-      text: `项目仓库地址： <a href="">vue-ssr-lessons</a>`
+      text: `项目仓库地址： <a href="https://github.com/Neveryu/vue-ssr-lessons" target="_blank">vue-ssr-lessons</a>`
     },
     template: `
       <div>

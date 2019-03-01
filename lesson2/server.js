@@ -7,8 +7,8 @@ server.get('*', (req, res) => {
   const app = new Vue({
     data: {
       url: req.url,
-      text: `vue ssr lessons from <a href="">NeverYu</a>`,
-      repository: `项目仓库地址： <a href="">vue-ssr-lessons</a>`
+      text: `vue ssr lessons from： <a href="https://github.com/neveryu" target="_blank">NeverYu</a>`,
+      repository: `项目仓库地址： <a href="https://github.com/Neveryu/vue-ssr-lessons" target="_blank">vue-ssr-lessons</a>`
     },
     template: `
       <div>
