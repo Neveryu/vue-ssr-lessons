@@ -11,9 +11,16 @@
 
 本课程内容如下：
 
+|【基础篇】|【中级篇】|
+|:---:|:---:|
+|[Lesson1](#lesson1)|[Lesson4](#lesson4)|
+|[Lesson2](#lesson2)|[Lesson5](#lesson5)|
+|[Lesson3](#lesson3)|[Lesson6](#lesson6)|
+
+
 【基础篇】
 
-- lesson1
+### lesson1
 
 用最简单，明白的方式创建一个 vue 服务端渲染的应用程序。
 ``` js
@@ -49,7 +56,7 @@ npm start
 
 -------------------
 
-- lesson2
+### lesson2
 
 与服务器集成，使用 Express 作为服务器提供服务；
 
@@ -63,7 +70,7 @@ npm start
 
 -------------------
 
-- lesson3
+### lesson3
 
 内容：使用一个页面模板 `index.template.html`。
 
@@ -85,7 +92,25 @@ npm start
 
 【中级篇】
 
-- lesson4
+### lesson4
+
+![](./assets/vue-ssr-summarize.png)
+
+与纯客户端开发模式不同，服务端渲染的最终结果是生成 `Client Bundle` 和 `Server Bundle`。
+
+在这一章，我们会添加 `entry-client.js` 和 `entry-server.js` 分别作为客户端和服务端的入口。`app.js` 是通用的入口，供 `entry-client.js` 和 `entry-server.js` 共同使用。
+
+课程 4 的运行步骤：
+``` bash
+cs lesson4
+npm i
+npm start
+```
+浏览器访问 [http://localhost:8888](http://localhost:8888)
+
+【至于 webpack 的配置，感兴趣的可以看一下，比较简单。】
+
+------------------------
 
 - lesson5
 
