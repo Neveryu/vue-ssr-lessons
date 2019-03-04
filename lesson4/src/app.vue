@@ -1,12 +1,31 @@
 <template>
   <div id="app">
     <header class="header">
-      <router-link to="/home">Home</router-link>
-      <router-link to="/project">Project</router-link>
-      <router-link to="/about">About</router-link>
+      <p class="title">vue ssr 课程</p>
     </header>
     <transition name="fade" mode="out-in">
-      <router-view class="view"></router-view>
+      <div class="view">
+        <div class="item vue-sell">
+          <img src="~/public/vue-sell-visit.png" width="130" alt="">
+          <p>
+            <a target="_blank" href="https://neveryu.github.io/sell/index.html">用vue构建的外卖app</a>
+            <br>
+            <span>手机扫码体验</span>
+          </p>
+        </div>
+        <div class="item vue-music">
+          <img src="~/public/vue-music-visit.png" width="130" alt="">
+          <p>
+            <a target="_blank" href="https://git.io/fhnor">用vue构建的音乐app</a>
+            <br>
+              <span>手机扫码体验</span>
+          </p>
+        </div>
+        <div class="item vue-tour">
+          <img src="~/public/vue-prerender.png" width="130" alt="">
+          <p><a target="_blank" href="https://git.io/fp8xw">vue预渲染实例</a></p>
+        </div>
+      </div>
     </transition>
     <my-footer></my-footer>
   </div>
@@ -48,6 +67,9 @@ div
   border-bottom 1px solid #ccc
   background-color #f69
   text-align center
+  .title
+    line-height 3
+    font-size 20px
   a
     display inline-block
     height 60px
@@ -71,5 +93,10 @@ div
 .fade-enter, .fade-leave-active
   opacity 0
 .view
+  display flex
   padding 20px 50px
+  .item
+    flex 1
+    a
+      color #f36
 </style>

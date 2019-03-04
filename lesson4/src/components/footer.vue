@@ -12,32 +12,24 @@
         </ul>
       </div>
       <div class="center top-item">
-        <h2>旅游FAQ</h2>
+        <h2>FAQ</h2>
         <hr>
         <ul>
-          <li>旅游合同签订方式？</li>
-          <li>儿童价是基于什么制定的？</li>
-          <li>旅游的线路品质怎么界定的？</li>
-          <li>单房差是什么？</li>
+          <li>如何搭建一个vue ssr环境？</li>
+          <li>有没有像vue-cli那样开箱即用的脚手架？</li>
+          <li>如何部署以及与后端结合？</li>
+          <li>vue 3.0 什么时候发布？</li>
         </ul>
       </div>
       <div class="right top-item">
         <h2>联系方式</h2>
         <hr>
         <ul>
-          <li>微博：<a class="weiboLink" href="https://weibo.com/Neveryu">https://weibo.com/Neveryu</a></li>
-          <li>邮件：<a class="emailLink" href="mailto:never_yu@foxmail.com?cc=never_yu@qq.com&bcc=never_yu@qq.com&subject=From%20your%20travel%20site%20power%20by%20vue%20and%20prerender!">never_yu@foxmail.com</a></li>
-          <li>地址：马路边上</li>
-          <li>广告位招租</li>
+          <li>微博：<a class="weiboLink" target="_blank" href="https://weibo.com/Neveryu">https://weibo.com/Neveryu</a></li>
+          <li>邮件：<a class="emailLink" target="_blank" href="mailto:never_yu@foxmail.com?cc=never_yu@qq.com&bcc=never_yu@qq.com&subject=From%20your%20travel%20site%20power%20by%20vue%20and%20prerender!">never_yu@foxmail.com</a></li>
+          <li>地址：宝安中心-壹方城-L3-覔书店</li>
+          <li>留言：<a class="guestbook" target="_blank" href="https://neveryu.github.io/guestbook">https://neveryu.github.io/guestbook</a></li>
         </ul>
-      </div>
-      <div class="vue-sell">
-        <!-- <img src="~@/assets/vue-sell.png" width="130" alt=""> -->
-        <p>用vue构建的外卖app</p>
-      </div>
-      <div class="vue-music">
-        <!-- <img src="~@/assets/vue-music.png" width="130" alt=""> -->
-        <p>用vue构建的音乐app</p>
       </div>
     </div>
     <div class="bottom">
@@ -78,6 +70,8 @@
           color #fc0
         .emailLink
           color #f66
+        .guestbook
+          color #42b983
         h2
           font-size 24px
           font-weight normal
