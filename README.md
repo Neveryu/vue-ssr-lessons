@@ -20,7 +20,7 @@
 
 【基础篇】
 
-### lesson1
+## lesson1
 
 用最简单，明白的方式创建一个 vue 服务端渲染的应用程序。
 ``` js
@@ -56,7 +56,7 @@ npm start
 
 -------------------
 
-### lesson2
+## lesson2
 
 与服务器集成，使用 Express 作为服务器提供服务；
 
@@ -70,7 +70,7 @@ npm start
 
 -------------------
 
-### lesson3
+## lesson3
 
 内容：使用一个页面模板 `index.template.html`。
 
@@ -82,7 +82,7 @@ renderer 只从应用程序生成 HTML 标记(markup)，如果不提供模板的
 
 课程 3 的运行步骤：
 ``` bash
-cs lesson3
+cd lesson3
 npm i
 npm start
 ```
@@ -92,7 +92,7 @@ npm start
 
 【中级篇】
 
-### lesson4
+## lesson4
 
 ![](./assets/vue-ssr-summarize.png)
 
@@ -102,7 +102,7 @@ npm start
 
 课程 4 的运行步骤：
 ``` bash
-cs lesson4
+cd lesson4
 npm i
 npm start
 ```
@@ -112,6 +112,16 @@ npm start
 
 ------------------------
 
-- lesson5
+## lesson5
+这一节，加入 `vue-router` 来实现路由的功能。
+
+课程 5 的运行步骤：
+``` bash
+cd lesson5
+npm i
+npm start
+```
+浏览器访问 [http://localhost:8888](http://localhost:8888)
+
 
 - lesson6
