@@ -181,7 +181,7 @@ npm start
 cd lesson7
 
 # install dependencies
-npm install # or yarn
+npm install
 
 # serve in dev mode, with hot reload at localhost:8080
 npm run dev

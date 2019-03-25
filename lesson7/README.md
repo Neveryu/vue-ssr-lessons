@@ -18,7 +18,18 @@
 
 使用相同的策略，你可以轻松地将此 `mixin` 扩展为通用的头部管理工具 (generic head management utility)。
 
-5、新增构建打包已经运行 server 的命令
+5、新增构建打包以及运行 server 的命令
+
+``` json
+"scripts": {
+    "dev": "npm start",
+    "start": "nodemon server.js",
+    "server": "cross-env NODE_ENV=production node server",
+    "build": "rimraf dist && npm run build:client && npm run build:server",
+    "build:client": "cross-env NODE_ENV=production webpack --config build/webpack.client.config.js --progress --hide-modules",
+    "build:server": "cross-env NODE_ENV=production webpack --config build/webpack.server.config.js --progress --hide-modules"
+}
+```
 
 课程 7 的开发运行步骤：
 
@@ -26,13 +37,13 @@
 cd lesson7
 
 # install dependencies
-npm install # or yarn
+npm install
 
 # serve in dev mode, with hot reload at localhost:8080
 npm run dev
 ```
 
-课程 7 打包 server 运行步骤：
+课程 7 构建以及 server 运行步骤：
 
 ``` bash
 # build for production（打生产环境的包）
