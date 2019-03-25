@@ -20,7 +20,7 @@
 --------------
 
 
-【基础篇】
+<p align="center"><b>【基础篇】</b></p>
 
 ## lesson1
 
@@ -56,6 +56,8 @@ npm start
 <div data-server-rendered="true">Hello World</div>
 ```
 
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
 -------------------
 
 ## lesson2
@@ -69,6 +71,8 @@ npm i
 npm start
 ```
 浏览器访问 [http://localhost:8888](http://localhost:8888)
+
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
 
 -------------------
 
@@ -84,7 +88,7 @@ npm start
 ```
 浏览器访问 [http://localhost:8888](http://localhost:8888)
 
-<p align="center"><b color="red;" style="color: red;">本节内容讲解</b></p>
+<p align="center"><b>本节内容讲解</b></p>
 
 `renderer` 只从应用程序生成 HTML 标记(markup)，如果不提供模板的话，那么生成的 HTML 标记就应该是一个完整的 html 内容。
 
@@ -92,9 +96,11 @@ npm start
 
 同时，模板还支持简单插值。我们可以通过传入一个 “渲染上下文对象” `context`，作为 `renderToString` 函数的第二个参数，来提供插值数据。
 
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
 -------------------
 
-【中级篇】
+<p align="center"><b>【中级篇】</b></p>
 
 ## lesson4
 
@@ -116,6 +122,8 @@ npm start
 
 【至于 `webpack` 的配置，感兴趣的可以看一下，比较简单。】
 
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
 ------------------------
 
 ## lesson5
@@ -131,16 +139,20 @@ npm start
 
 路由 `vue-router` 的添加是比较容易的；新建一个目录 `router` 并创建一个路由实例，然后 `app.js`、`entry-client.js`、`entry-server.js` 有小幅改动。
 
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
+------
+
 ## lesson6
 **内容**：这一节实现【数据】
 
-<p align="center"><b color="red;" style="color: red;">本节内容讲解</b></p>
+<p align="center"><b>本节内容讲解</b></p>
 
 我们知道，服务端渲染最重要的部分就是“数据”了。既然是服务端渲染，那么就应该是服务端将运算处理后的数据填到应用程序中，然后将整个应用程序返回到前端。所以**在服务端渲染过程之前，需要先预取和解析好这些数据。**
 
 另一个需要关注的问题是在客户端，在挂载 (mount) 到客户端应用程序之前，需要获取到与服务器端应用程序完全相同的数据 - 否则，客户端应用程序会因为使用与服务器端应用程序不同的状态，然后导致混合失败。
 
-【在这里需要好好的思考一下，vue 的服务端渲染是如何实现的？如何理解“客户端应用程序会因为使用与服务器端应用程序不同的状态，然后导致混合失败”这句话？第 4 节中的 vue 服务端渲染结构图是否理解清楚了？】
+【在这里需要好好的思考一下，vue 的服务端渲染是如何实现的？如何理解 “客户端应用程序会因为使用与服务器端应用程序不同的状态，然后导致混合失败” 这句话？第 4 节中的 vue 服务端渲染结构图是否理解清楚了？】
 
 我们在服务端预取和解析数据的时候，将这些数据填充到“状态容器(state container)”中，然后客户端也使用这里面的数据，就可以保证客户端与服务器端拥有相同的状态了。【状态容器如何实现？】
 
@@ -155,6 +167,11 @@ npm start
 浏览器访问 [http://localhost:8888](http://localhost:8888)
 
 本次更新内容较多，详细的说明请看这里 => [Lesson6](./lesson6)
+
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
+<p align="center"><b>【附加篇】</b></p>
+
 
 ## lesson7
 **内容**：这一节增加了一些额外的辅助工具【`gzip`、缓存、`favicon`、`title`】；然后增加了生产环境的打包和运行命令。
@@ -182,11 +199,13 @@ npm run server
 ```
 本次更新内容较多，详细的说明请看这里 => [Lesson7](./lesson7)
 
+**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+
 # 交流
 
-**交流学习 QQ 群**
+交流学习 QQ 群：685486827，<a target="_blank" color="red" href="//shang.qq.com/wpa/qunwpa?idkey=32da7a18744756b0d8ffdd05b84999afecb5265dbad0fb119033e122abe803f3">一键加群</a>
 
-![](./qq-group.jpg)
+<img src="./qq-group.jpg" alt="加入qq群" width="250">
 
 
 # 额外知识点总结 & 开小灶
@@ -298,4 +317,5 @@ module.exports = {
   ]
 }
 ```
+
 
