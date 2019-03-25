@@ -56,7 +56,7 @@ npm start
 <div data-server-rendered="true">Hello World</div>
 ```
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 -------------------
 
@@ -72,7 +72,7 @@ npm start
 ```
 浏览器访问 [http://localhost:8888](http://localhost:8888)
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 -------------------
 
@@ -96,7 +96,7 @@ npm start
 
 同时，模板还支持简单插值。我们可以通过传入一个 “渲染上下文对象” `context`，作为 `renderToString` 函数的第二个参数，来提供插值数据。
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 -------------------
 
@@ -122,7 +122,7 @@ npm start
 
 【至于 `webpack` 的配置，感兴趣的可以看一下，比较简单。】
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 ------------------------
 
@@ -139,7 +139,7 @@ npm start
 
 路由 `vue-router` 的添加是比较容易的；新建一个目录 `router` 并创建一个路由实例，然后 `app.js`、`entry-client.js`、`entry-server.js` 有小幅改动。
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 ------
 
@@ -168,10 +168,9 @@ npm start
 
 本次更新内容较多，详细的说明请看这里 => [Lesson6](./lesson6)
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 <p align="center"><b>【附加篇】</b></p>
-
 
 ## lesson7
 **内容**：这一节增加了一些额外的辅助工具【`gzip`、缓存、`favicon`、`title`】；然后增加了生产环境的打包和运行命令。
@@ -199,14 +198,15 @@ npm run server
 ```
 本次更新内容较多，详细的说明请看这里 => [Lesson7](./lesson7)
 
-**[⬆ 返回顶部](#这是一个 vue ssr 的教学课程)**
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 # 交流
 
-交流学习 QQ 群：685486827，<a target="_blank" color="red" href="//shang.qq.com/wpa/qunwpa?idkey=32da7a18744756b0d8ffdd05b84999afecb5265dbad0fb119033e122abe803f3">一键加群</a>
+交流学习 QQ 群：685486827，<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=32da7a18744756b0d8ffdd05b84999afecb5265dbad0fb119033e122abe803f3">一键加群</a>
 
 <img src="./qq-group.jpg" alt="加入qq群" width="250">
 
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 # 额外知识点总结 & 开小灶
 
@@ -317,5 +317,7 @@ module.exports = {
   ]
 }
 ```
+
+**[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
 
