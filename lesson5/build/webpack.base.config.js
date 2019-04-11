@@ -9,7 +9,7 @@ const isProd = process.env.NODE_ENV === 'production'
 module.exports = {
   devtool: isProd ? false : '#cheap-module-source-map',
   output: {
-    path: path.resolve(__dirname, '../dits'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
     filename: '[name].[chunkhash].js'
   },
