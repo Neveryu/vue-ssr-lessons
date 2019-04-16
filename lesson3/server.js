@@ -30,6 +30,7 @@ server.get('*', (req, res) => {
   })
 
   renderer.renderToString(app, context).then(html => {
+    // 这里输出就是将内容插入到模板后的，整个html内容
     res.end(`${html}`)
   }).catch(err => {
     res.status(500).end('Internal Server Error')
@@ -37,8 +38,18 @@ server.get('*', (req, res) => {
   })
 })
 
+/**
+ * 下面是两种起 server 的方式
+ * 用其一即可
+ */
+
 server.set('port', process.env.PORT || 8888)
 let hostname = '0.0.0.0'
 server.listen(server.get('port'), hostname, () => {
   console.log(`Server running at http://${hostname}:${server.get('port')}`)
 })
+
+// const port = process.env.PORT || 8888
+// server.listen(port, () => {
+//   console.log(`server started at localhost:${port}`)
+// })

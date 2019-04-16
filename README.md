@@ -208,7 +208,7 @@ npm run server
 
 **[⬆ 返回顶部](#这是一个-vue-ssr-的教学课程)**
 
-# 额外知识点总结 & 开小灶
+# 额外知识点总结
 
 1、我们在前三节使用的都是 `vue-server-renderer` 中的 `createRenderer` 方法；从第四节开始，我们使用的是 `createBundleRenderer`，所创建的 `bundle renderer`，用法和普通 `renderer` 相同。
 `createBundleRenderer` 接收一个 `server bundle` 生成的特殊 JSON 文件。但是 `bundle renderer` 提供以下优点：
