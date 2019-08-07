@@ -40,6 +40,9 @@ import MyFooter from './components/footer.vue'
 export default {
   components: {
     MyFooter
+  },
+  created() {
+    console.log(111)
   }
 }
 </script>

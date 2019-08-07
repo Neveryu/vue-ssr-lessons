@@ -6,10 +6,10 @@ function getTitle(vm) {
 }
 
 const serverTitleMixin = {
-  create() {
+  created() {
     const title = getTitle(this)
     if(title) {
-      this.$ssrContextl.title = `Vue SSR Lesson | ${title}`
+      this.$ssrContext.title = `Vue SSR Lesson | ${title}`
     }
   }
 }

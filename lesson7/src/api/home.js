@@ -1,8 +1,8 @@
 const allData = {
-  totalRegister: 44,
-  totalActiver: 33,
-  topMouthActiver: 22,
-  todayLogin: 11
+  totalRegister: 2019,
+  totalActiver: 2008,
+  topMouthActiver: 520,
+  todayLogin: 100
 }
 
 export function getAll() {

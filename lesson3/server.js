@@ -25,6 +25,7 @@ server.get('*', (req, res) => {
       <div>
         <div>访问的 URL 是： {{ url }}</div>
         <div v-html="text"></div>
+        <br/>
       </div>
     `
   })
