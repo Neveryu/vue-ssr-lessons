@@ -20,7 +20,7 @@
     "lru-cache": "^4.1.1",
     "route-cache": "0.4.3",
     "serve-favicon": "^2.4.5",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "extract-text-webpack-plugin": "^3.0.2",
     "nodemon": "^1.18.10",
     "vue": "^2.6.7",
